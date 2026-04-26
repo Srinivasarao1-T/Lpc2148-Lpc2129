@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "delay.o" "kpm.o" "lcd.o" "kjpm_test2.o" --strict --scatter "store_matrix.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\store_matrix.map" -o "store_matrix.axf"

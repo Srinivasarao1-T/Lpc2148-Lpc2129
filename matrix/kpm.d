@@ -1,0 +1,9 @@
+kpm.o: kpm.c
+kpm.o: C:\KeilARM\ARM\INC\Philips\lpc21xx.h
+kpm.o: types.h
+kpm.o: delay.h
+kpm.o: types.h
+kpm.o: lcd.h
+kpm.o: types.h
+kpm.o: lcd_define.h
+kpm.o: kpm.h

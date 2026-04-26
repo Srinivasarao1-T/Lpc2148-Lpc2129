@@ -1,0 +1,23 @@
+*** Creating Trace Output File 'store_matrix.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"delay.o"'
+### List of Objects: adding '"kpm.o"'
+### List of Objects: adding '"lcd.o"'
+### List of Objects: adding '"kjpm_test2.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "startup.o" "delay.o" "kpm.o" "lcd.o" "kjpm_test2.o" --strict --scatter "store_matrix.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\store_matrix.map" -o "store_matrix.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'store_matrix.axf'
+### ADS-LD Command File: 'store_matrix.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'store_matrix.lnp', Handle=0x0000048C
+### Writing '.lnp' file
+### ADS-LD Command file 'store_matrix.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

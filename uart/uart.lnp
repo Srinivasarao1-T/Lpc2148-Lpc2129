@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "uart.o" "uart_tx_rx_interrupt_test.o" "delay.o" --strict --scatter "uart.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\uart.map" -o "uart.axf"

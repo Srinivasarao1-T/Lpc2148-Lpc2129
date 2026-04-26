@@ -1,0 +1,9 @@
+kjpm_test2.o: kjpm_test2.c
+kjpm_test2.o: C:\KeilARM\ARM\INC\Philips\lpc21xx.h
+kjpm_test2.o: types.h
+kjpm_test2.o: lcd.h
+kjpm_test2.o: types.h
+kjpm_test2.o: lcd_define.h
+kjpm_test2.o: delay.h
+kjpm_test2.o: types.h
+kjpm_test2.o: kpm.h

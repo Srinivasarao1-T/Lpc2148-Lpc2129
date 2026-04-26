@@ -1,0 +1,1 @@
+-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I "C:\KeilARM\ARM\INC" -I "C:\KeilARM\ARM\INC\Philips" -o "matrix_keypad.o" --omf_browse "matrix_keypad.crf" --depend "matrix_keypad.d" "matrix_keypad.c"
