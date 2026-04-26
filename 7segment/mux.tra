@@ -1,0 +1,20 @@
+*** Creating Trace Output File 'mux.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"mux.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "startup.o" "mux.o" --strict --scatter "mux.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\mux.map" -o "mux.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'mux.axf'
+### ADS-LD Command File: 'mux.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'mux.lnp', Handle=0x00000200
+### Writing '.lnp' file
+### ADS-LD Command file 'mux.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

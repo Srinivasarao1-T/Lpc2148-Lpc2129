@@ -1,0 +1,97 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\v24he8t3\Desktop\arm\7segment\AL_7seg_dis_pin8topin15.uvproj
+Project File Date:  05/16/2025
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+linking...
+AL_7seg_dis_pin8topin15.axf: Warning: L6665W: Neither Lib$$Request$$armlib Lib$$Request$$cpplib defined, not searching ARM libraries.
+AL_7seg_dis_pin8topin15.axf: Error: L6411E: No compatible library exists with a definition of startup symbol __main.
+AL_7seg_dis_pin8topin15.axf: Not enough information to list image symbols.
+AL_7seg_dis_pin8topin15.axf: Not enough information to list the image map.
+AL_7seg_dis_pin8topin15.axf: Finished: 2 information, 1 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling AL_7seg_dis_pin8topin15.c...
+AL_7seg_dis_pin8topin15.c(3): error:  #20: identifier "u32" is undefined
+AL_7seg_dis_pin8topin15.c:    void delay_ms(u32 delayms)
+AL_7seg_dis_pin8topin15.c:                  ^
+AL_7seg_dis_pin8topin15.c(11): error:  #137: expression must be a modifiable lvalue
+AL_7seg_dis_pin8topin15.c:       for(i=0;i<10;i++)
+AL_7seg_dis_pin8topin15.c:           ^
+AL_7seg_dis_pin8topin15.c(11): error:  #137: expression must be a modifiable lvalue
+AL_7seg_dis_pin8topin15.c:       for(i=0;i<10;i++)
+AL_7seg_dis_pin8topin15.c:                    ^
+AL_7seg_dis_pin8topin15.c(13): error:  #20: identifier "IOPIN" is undefined
+AL_7seg_dis_pin8topin15.c:         IOPIN0=IOPIN&(~(255<<8))|(arr[i]<<8);
+AL_7seg_dis_pin8topin15.c:                ^
+AL_7seg_dis_pin8topin15.c(17): warning:  #1-D: last line of file ends without a newline
+AL_7seg_dis_pin8topin15.c:   }
+AL_7seg_dis_pin8topin15.c:    ^
+AL_7seg_dis_pin8topin15.c: AL_7seg_dis_pin8topin15.c: 1 warning, 4 errors
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling AL_7seg_dis_pin8topin15.c...
+AL_7seg_dis_pin8topin15.c(11): error:  #137: expression must be a modifiable lvalue
+AL_7seg_dis_pin8topin15.c:       for(i=0;i<10;i++)
+AL_7seg_dis_pin8topin15.c:           ^
+AL_7seg_dis_pin8topin15.c(11): error:  #137: expression must be a modifiable lvalue
+AL_7seg_dis_pin8topin15.c:       for(i=0;i<10;i++)
+AL_7seg_dis_pin8topin15.c:                    ^
+AL_7seg_dis_pin8topin15.c(13): error:  #20: identifier "IOPIN" is undefined
+AL_7seg_dis_pin8topin15.c:         IOPIN0=IOPIN&(~(255<<8))|(arr[i]<<8);
+AL_7seg_dis_pin8topin15.c:                ^
+AL_7seg_dis_pin8topin15.c(17): warning:  #1-D: last line of file ends without a newline
+AL_7seg_dis_pin8topin15.c:   }
+AL_7seg_dis_pin8topin15.c:    ^
+AL_7seg_dis_pin8topin15.c: AL_7seg_dis_pin8topin15.c: 1 warning, 3 errors
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling AL_7seg_dis_pin8topin15.c...
+AL_7seg_dis_pin8topin15.c(11): error:  #137: expression must be a modifiable lvalue
+AL_7seg_dis_pin8topin15.c:       for(i=0;i<10;i++)
+AL_7seg_dis_pin8topin15.c:           ^
+AL_7seg_dis_pin8topin15.c(11): error:  #137: expression must be a modifiable lvalue
+AL_7seg_dis_pin8topin15.c:       for(i=0;i<10;i++)
+AL_7seg_dis_pin8topin15.c:                    ^
+AL_7seg_dis_pin8topin15.c: AL_7seg_dis_pin8topin15.c: 0 warnings, 2 errors
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling AL_7seg_dis_pin8topin15.c...
+AL_7seg_dis_pin8topin15.c(11): error:  #137: expression must be a modifiable lvalue
+AL_7seg_dis_pin8topin15.c:       for(i=0;i<10;i++){
+AL_7seg_dis_pin8topin15.c:           ^
+AL_7seg_dis_pin8topin15.c(11): error:  #137: expression must be a modifiable lvalue
+AL_7seg_dis_pin8topin15.c:       for(i=0;i<10;i++){
+AL_7seg_dis_pin8topin15.c:                    ^
+AL_7seg_dis_pin8topin15.c: AL_7seg_dis_pin8topin15.c: 0 warnings, 2 errors
+Target not created
+Build target 'Target 1'
+compiling AL_7seg_dis_pin8topin15.c...
+linking...
+Program Size: Code=948 RO-data=72 RW-data=4 ZI-data=1260  
+"AL_7seg_dis_pin8topin15.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling AL_7seg_dis_pin8topin15.c...
+AL_7seg_dis_pin8topin15.c(3): error:  #169: expected a declaration
+AL_7seg_dis_pin8topin15.c:   unsigned int i;7
+AL_7seg_dis_pin8topin15.c:                  ^
+AL_7seg_dis_pin8topin15.c(17): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+AL_7seg_dis_pin8topin15.c: AL_7seg_dis_pin8topin15.c: 1 warning, 1 error
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling AL_7seg_dis_pin8topin15.c...
+linking...
+Program Size: Code=948 RO-data=72 RW-data=4 ZI-data=1260  
+"AL_7seg_dis_pin8topin15.axf" - 0 Error(s), 0 Warning(s).

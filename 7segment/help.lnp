@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "float_mux.o" --nodebug --strict --scatter "help.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\help.map" -o "help.axf"

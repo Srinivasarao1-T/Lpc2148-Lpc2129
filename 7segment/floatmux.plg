@@ -1,0 +1,108 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\v24he8t3\Desktop\arm\7segment\7segment.uvproj
+Project File Date:  05/30/2025
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling MUX.c...
+linking...
+Program Size: Code=1144 RO-data=72 RW-data=8 ZI-data=1256  
+FromELF: creating hex file...
+"floatmux.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling MUX.c...
+linking...
+Program Size: Code=1144 RO-data=72 RW-data=8 ZI-data=1256  
+FromELF: creating hex file...
+"mux.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling MUX.c...
+MUX.c(1): error:  #169: expected a declaration
+MUX.c:   .#include <LPC21xx.H>
+MUX.c:   ^
+MUX.c(1): error:  #10: "#" not expected here
+MUX.c:   .#include <LPC21xx.H>
+MUX.c:    ^
+MUX.c(17): error:  #20: identifier "IODIR0" is undefined
+MUX.c:       IODIR0|=(255<<6)|(1<<5)|(1<<4);
+MUX.c:       ^
+MUX.c(26): error:  #20: identifier "IOPIN0" is undefined
+MUX.c:                                     IOPIN0=(IOPIN0&~(255<<6))|(arr[ten]<<6);
+MUX.c:                                     ^
+MUX.c(26): error:  #20: identifier "arr" is undefined
+MUX.c:                                     IOPIN0=(IOPIN0&~(255<<6))|(arr[ten]<<6);
+MUX.c:                                                                ^
+MUX.c(27): error:  #20: identifier "IOSET0" is undefined
+MUX.c:                                     IOSET0=1<<5;
+MUX.c:                                     ^
+MUX.c(29): error:  #20: identifier "IOCLR0" is undefined
+MUX.c:                                             IOCLR0=1<<5;
+MUX.c:                                             ^
+MUX.c: MUX.c: 0 warnings, 7 errors
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling MUX.c...
+MUX.c(1): error:  #169: expected a declaration
+MUX.c:   .#include <LPC21xx.H>
+MUX.c:   ^
+MUX.c(1): error:  #10: "#" not expected here
+MUX.c:   .#include <LPC21xx.H>
+MUX.c:    ^
+MUX.c(17): error:  #20: identifier "IODIR0" is undefined
+MUX.c:       IODIR0|=(255<<6)|(1<<5)|(1<<4);
+MUX.c:       ^
+MUX.c(26): error:  #20: identifier "IOPIN0" is undefined
+MUX.c:                                     IOPIN0=(IOPIN0&~(255<<6))|(arr[ten]<<6);
+MUX.c:                                     ^
+MUX.c(26): error:  #20: identifier "arr" is undefined
+MUX.c:                                     IOPIN0=(IOPIN0&~(255<<6))|(arr[ten]<<6);
+MUX.c:                                                                ^
+MUX.c(27): error:  #20: identifier "IOSET0" is undefined
+MUX.c:                                     IOSET0=1<<5;
+MUX.c:                                     ^
+MUX.c(29): error:  #20: identifier "IOCLR0" is undefined
+MUX.c:                                             IOCLR0=1<<5;
+MUX.c:                                             ^
+MUX.c: MUX.c: 0 warnings, 7 errors
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling MUX.c...
+MUX.c(1): error:  #169: expected a declaration
+MUX.c:   .#include <LPC21xx.H>
+MUX.c:   ^
+MUX.c(1): error:  #10: "#" not expected here
+MUX.c:   .#include <LPC21xx.H>
+MUX.c:    ^
+MUX.c(17): error:  #20: identifier "IODIR0" is undefined
+MUX.c:       IODIR0|=(255<<6)|(1<<5)|(1<<4);
+MUX.c:       ^
+MUX.c(26): error:  #20: identifier "IOPIN0" is undefined
+MUX.c:                                     IOPIN0=(IOPIN0&~(255<<6))|(arr[ten]<<6);
+MUX.c:                                     ^
+MUX.c(26): error:  #20: identifier "arr" is undefined
+MUX.c:                                     IOPIN0=(IOPIN0&~(255<<6))|(arr[ten]<<6);
+MUX.c:                                                                ^
+MUX.c(27): error:  #20: identifier "IOSET0" is undefined
+MUX.c:                                     IOSET0=1<<5;
+MUX.c:                                     ^
+MUX.c(29): error:  #20: identifier "IOCLR0" is undefined
+MUX.c:                                             IOCLR0=1<<5;
+MUX.c:                                             ^
+MUX.c: MUX.c: 0 warnings, 7 errors
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling MUX.c...
+linking...
+Program Size: Code=1144 RO-data=72 RW-data=8 ZI-data=1256  
+FromELF: creating hex file...
+"mux.axf" - 0 Error(s), 0 Warning(s).

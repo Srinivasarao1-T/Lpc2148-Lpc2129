@@ -1,0 +1,215 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\v24he8t3\Desktop\arm\7segment\7segment.uvproj
+Project File Date:  05/29/2025
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+float_mux.c(3): error:  #147: declaration is incompatible with "const unsigned int arr[10]" (declared at line 2)
+float_mux.c:   int arr[2],dp,dp2;
+float_mux.c:       ^
+float_mux.c(19): error:  #20: identifier "a" is undefined
+float_mux.c:                         for(a=250;a>0;a--){
+float_mux.c:                             ^
+float_mux.c(20): error:  #29: expected an expression
+float_mux.c:                                      for(int i=0;i<=1;i++)
+float_mux.c:                                          ^
+float_mux.c(20): error:  #20: identifier "i" is undefined
+float_mux.c:                                      for(int i=0;i<=1;i++)
+float_mux.c:                                                  ^
+float_mux.c(22): warning:  #1293-D: assignment in condition
+float_mux.c:                                       if(dp=i)
+float_mux.c:                                          ^
+float_mux.c(31): warning:  #223-D: function "delay_ms" declared implicitly
+float_mux.c:                                       delay_ms(1);
+float_mux.c:                                       ^
+float_mux.c: float_mux.c: 2 warnings, 4 errors
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+float_mux.c(3): error:  #147: declaration is incompatible with "const unsigned int arr[10]" (declared at line 2)
+float_mux.c:   int arr[2],dp,dp2;
+float_mux.c:       ^
+float_mux.c(19): error:  #20: identifier "a" is undefined
+float_mux.c:                         for(a=250;a>0;a--){
+float_mux.c:                             ^
+float_mux.c(20): error:  #29: expected an expression
+float_mux.c:                                      for(int i=0;i<=1;i++)
+float_mux.c:                                          ^
+float_mux.c(20): error:  #20: identifier "i" is undefined
+float_mux.c:                                      for(int i=0;i<=1;i++)
+float_mux.c:                                                  ^
+float_mux.c(31): warning:  #223-D: function "delay_ms" declared implicitly
+float_mux.c:                                       delay_ms(1);
+float_mux.c:                                       ^
+float_mux.c: float_mux.c: 1 warning, 4 errors
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+float_mux.c(3): error:  #147: declaration is incompatible with "const unsigned int arr[10]" (declared at line 2)
+float_mux.c:   int arr[2],dp,dp2,i;
+float_mux.c:       ^
+float_mux.c(19): error:  #20: identifier "a" is undefined
+float_mux.c:                         for(a=250;a>0;a--){
+float_mux.c:                             ^
+float_mux.c(31): warning:  #223-D: function "delay_ms" declared implicitly
+float_mux.c:                                       delay_ms(1);
+float_mux.c:                                       ^
+float_mux.c: float_mux.c: 1 warning, 2 errors
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+float_mux.c(3): error:  #147: declaration is incompatible with "const unsigned int arr[10]" (declared at line 2)
+float_mux.c:   int arr[2],dp,dp2,i,a;
+float_mux.c:       ^
+float_mux.c(31): warning:  #223-D: function "delay_ms" declared implicitly
+float_mux.c:                                       delay_ms(1);
+float_mux.c:                                       ^
+float_mux.c: float_mux.c: 1 warning, 1 error
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+float_mux.c(3): error:  #65: expected a ";"
+float_mux.c:   int aa[2]dp,dp2,i,a;
+float_mux.c:            ^
+float_mux.c(13): error:  #20: identifier "dp" is undefined
+float_mux.c:       dp=0;
+float_mux.c:       ^
+float_mux.c(18): error:  #20: identifier "dp" is undefined
+float_mux.c:     dp=1;
+float_mux.c:     ^
+float_mux.c(23): error:  #20: identifier "a" is undefined
+float_mux.c:                         for(a=250;a>0;a--){
+float_mux.c:                             ^
+float_mux.c(24): error:  #20: identifier "i" is undefined
+float_mux.c:                                      for(i=0;i<=1;i++)
+float_mux.c:                                          ^
+float_mux.c(26): error:  #20: identifier "dp" is undefined
+float_mux.c:                                       if(dp==i)
+float_mux.c:                                          ^
+float_mux.c(28): error:  #20: identifier "dp2" is undefined
+float_mux.c:                                          dp2=0x7f;
+float_mux.c:                                          ^
+float_mux.c(31): error:  #20: identifier "dp2" is undefined
+float_mux.c:                                            dp2=0xff;
+float_mux.c:                                            ^
+float_mux.c(33): error:  #20: identifier "dp2" is undefined
+float_mux.c:                               IOPIN0=(IOPIN0&~(255<<6))|((arr[aa[i]]&dp2)<<6);
+float_mux.c:                                                                      ^
+float_mux.c(35): warning:  #223-D: function "delay_ms" declared implicitly
+float_mux.c:                                       delay_ms(1);
+float_mux.c:                                       ^
+float_mux.c: float_mux.c: 1 warning, 9 errors
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+float_mux.c(36): warning:  #223-D: function "delay_ms" declared implicitly
+float_mux.c:                                       delay_ms(1);
+float_mux.c:                                       ^
+float_mux.c: float_mux.c: 1 warning, 0 errors
+linking...
+help.axf: Error: L6218E: Undefined symbol delay_ms (referred from float_mux.o).
+help.axf: Not enough information to list image symbols.
+help.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+linking...
+Program Size: Code=4140 RO-data=72 RW-data=24 ZI-data=1256  
+FromELF: creating hex file...
+"help.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+linking...
+Program Size: Code=4140 RO-data=72 RW-data=24 ZI-data=1256  
+FromELF: creating hex file...
+"floatmux.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling float_mux.c...
+linking...
+Program Size: Code=4108 RO-data=72 RW-data=20 ZI-data=1260  
+FromELF: creating hex file...
+"floatmux.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+float_mux.c(48): warning:  #1-D: last line of file ends without a newline
+float_mux.c:   }
+float_mux.c:    ^
+float_mux.c: float_mux.c: 1 warning, 0 errors
+linking...
+Program Size: Code=4108 RO-data=72 RW-data=20 ZI-data=1260  
+FromELF: creating hex file...
+"floatmux.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+float_mux.c(6): error:  #130: expected a "{"
+float_mux.c:        for(dyms*=12000;dyms>0;dyms--);
+float_mux.c:        ^
+float_mux.c(9): warning:  #12-D: parsing restarts here after previous syntax error
+float_mux.c:   {
+float_mux.c:   ^
+float_mux.c(47): warning:  #1-D: last line of file ends without a newline
+float_mux.c:   }
+float_mux.c:    ^
+float_mux.c: float_mux.c: 2 warnings, 1 error
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+float_mux.c(48): warning:  #1-D: last line of file ends without a newline
+float_mux.c:   }
+float_mux.c:    ^
+float_mux.c: float_mux.c: 1 warning, 0 errors
+linking...
+Program Size: Code=4108 RO-data=72 RW-data=20 ZI-data=1260  
+FromELF: creating hex file...
+"floatmux.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+linking...
+Program Size: Code=4108 RO-data=72 RW-data=20 ZI-data=1260  
+FromELF: creating hex file...
+"floatmux.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+linking...
+Program Size: Code=4108 RO-data=72 RW-data=20 ZI-data=1260  
+FromELF: creating hex file...
+"floatmux.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+linking...
+Program Size: Code=4108 RO-data=72 RW-data=20 ZI-data=1260  
+FromELF: creating hex file...
+"floatmux.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+linking...
+Program Size: Code=3704 RO-data=72 RW-data=20 ZI-data=1260  
+FromELF: creating hex file...
+"floatmux.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling float_mux.c...
+linking...
+Program Size: Code=3704 RO-data=72 RW-data=20 ZI-data=1260  
+FromELF: creating hex file...
+"floatmux.axf" - 0 Error(s), 0 Warning(s).

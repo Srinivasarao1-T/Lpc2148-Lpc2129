@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "al_7seg_dis_pin8topin15.o" --strict --scatter "AL_7seg_dis_pin8topin15.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\AL_7seg_dis_pin8topin15.map" -o "AL_7seg_dis_pin8topin15.axf"

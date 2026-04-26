@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "mux.o" --strict --scatter "mux.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\mux.map" -o "mux.axf"
