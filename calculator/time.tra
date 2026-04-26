@@ -1,0 +1,25 @@
+*** Creating Trace Output File 'time.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"adc.o"'
+### List of Objects: adding '"delay.o"'
+### List of Objects: adding '"lcd.o"'
+### List of Objects: adding '"kpm.o"'
+### List of Objects: adding '"rtc.o"'
+### List of Objects: adding '"project.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "startup.o" "adc.o" "delay.o" "lcd.o" "kpm.o" "rtc.o" "project.o" --strict --scatter "time.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\time.map" -o "time.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'time.axf'
+### ADS-LD Command File: 'time.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'time.lnp', Handle=0x000002F0
+### Writing '.lnp' file
+### ADS-LD Command file 'time.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 1 errors
+### Updating obj list
+### LDADS_file() completed.

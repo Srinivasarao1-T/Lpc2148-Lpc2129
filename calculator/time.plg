@@ -1,0 +1,126 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\v24he8t3\Desktop\arm\mini project\time_bounded.uvproj
+Project File Date:  06/08/2025
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling ADC.c...
+compiling delay.c...
+compiling lcd.c...
+compiling kpm.c...
+compiling rtc.c...
+compiling project.c...
+project.c(32): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:           if(!(sum>=0&&sum<=23)==0)
+project.c:                   ^
+project.c(42): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:           if(!(sum>=0&&sum<=59)==0)
+project.c:                   ^
+project.c(52): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:           if(!(sum>=0&&sum<=59)==0)
+project.c:                   ^
+project.c(141): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:                      if(sum>=0&&sum<=23)
+project.c:                            ^
+project.c(143): error:  #65: expected a ";"
+project.c:                      else {cmdLCD(0xc0);strLCD("invalidoption");goto one};
+project.c:                                                                         ^
+project.c(149): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:                      if(sum>=0&&sum<=59)
+project.c:                            ^
+project.c(151): error:  #65: expected a ";"
+project.c:                      else {cmdLCD(0xc0);strLCD("invalidoption");goto two};
+project.c:                                                                         ^
+project.c(159): error:  #65: expected a ";"
+project.c:                      else {cmdLCD(0xc0);strLCD("invalidoption");goto three};
+project.c:                                                                           ^
+project.c(169): error:  #65: expected a ";"
+project.c:                               else {cmdLCD(0xc0);strLCD("invalidoption");goto four};
+project.c:                                                                                   ^
+project.c(172): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:                      if(sum>=0&&sum<=59)
+project.c:                            ^
+project.c(174): error:  #65: expected a ";"
+project.c:                      else {cmdLCD(0xc0);strLCD("invalidoption");goto four};
+project.c:                                                                          ^
+project.c(177): error:  #116: a break statement may only be used within a loop or switch
+project.c:                      break;
+project.c:                      ^
+project.c(188): warning:  #223-D: function "changebund" declared implicitly
+project.c:        case 1:changebund(0,arr);break;
+project.c:               ^
+project.c: project.c: 7 warnings, 6 errors
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling ADC.c...
+compiling delay.c...
+compiling lcd.c...
+compiling kpm.c...
+compiling rtc.c...
+compiling project.c...
+project.c(32): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:           if(!(sum>=0&&sum<=23)==0)
+project.c:                   ^
+project.c(42): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:           if(!(sum>=0&&sum<=59)==0)
+project.c:                   ^
+project.c(52): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:           if(!(sum>=0&&sum<=59)==0)
+project.c:                   ^
+project.c(141): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:                      if(sum>=0&&sum<=23)
+project.c:                            ^
+project.c(149): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:                      if(sum>=0&&sum<=59)
+project.c:                            ^
+project.c(172): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:                      if(sum>=0&&sum<=59)
+project.c:                            ^
+project.c(187): warning:  #223-D: function "changebund" declared implicitly
+project.c:        case 1:changebund(0,arr);break;
+project.c:               ^
+project.c: project.c: 7 warnings, 0 errors
+linking...
+time.axf: Error: L6218E: Undefined symbol changebund (referred from project.o).
+time.axf: Error: L6218E: Undefined symbol readSTR (referred from project.o).
+time.axf: Not enough information to list image symbols.
+time.axf: Finished: 1 information, 0 warning and 2 error messages.
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling ADC.c...
+compiling delay.c...
+compiling lcd.c...
+compiling kpm.c...
+compiling rtc.c...
+compiling project.c...
+project.c(32): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:           if(!(sum>=0&&sum<=23)==0)
+project.c:                   ^
+project.c(42): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:           if(!(sum>=0&&sum<=59)==0)
+project.c:                   ^
+project.c(52): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:           if(!(sum>=0&&sum<=59)==0)
+project.c:                   ^
+project.c(141): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:                      if(sum>=0&&sum<=23)
+project.c:                            ^
+project.c(149): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:                      if(sum>=0&&sum<=59)
+project.c:                            ^
+project.c(172): warning:  #186-D: pointless comparison of unsigned integer with zero
+project.c:                      if(sum>=0&&sum<=59)
+project.c:                            ^
+project.c: project.c: 6 warnings, 0 errors
+linking...
+time.axf: Error: L6218E: Undefined symbol readSTR (referred from project.o).
+time.axf: Not enough information to list image symbols.
+time.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created

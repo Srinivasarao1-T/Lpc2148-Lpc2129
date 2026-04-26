@@ -1,0 +1,22 @@
+*** Creating Trace Output File 'time_bounded.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"adc.o"'
+### List of Objects: adding '"delay.o"'
+### List of Objects: adding '"lcd.o"'
+### List of Objects: adding '"main_mini.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "startup.o" "adc.o" "delay.o" "lcd.o" "main_mini.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x40000000 --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\time_bounded.map" -o "time_bounded.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'time_bounded.axf'
+### ADS-LD Command File: 'time_bounded.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'time_bounded.lnp', Handle=0x00000358
+### Writing '.lnp' file
+### ADS-LD Command file 'time_bounded.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

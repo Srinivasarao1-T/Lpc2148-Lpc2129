@@ -1,0 +1,11 @@
+project.o: project.c
+project.o: C:\KeilARM\ARM\INC\Philips\lpc21xx.h
+project.o: delay.h
+project.o: types.h
+project.o: adc.h
+project.o: lcd_define.h
+project.o: lcd.h
+project.o: rtc.h
+project.o: rtc_defines.h
+project.o: kpm.h
+project.o: C:\KeilARM\ARM\RV31\INC\string.h
