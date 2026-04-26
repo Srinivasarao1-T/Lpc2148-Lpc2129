@@ -1,0 +1,43 @@
+A51 MACRO ASSEMBLER  SW_CNT                                                               08/29/2025 10:56:46 PAGE     1
+
+
+MACRO ASSEMBLER A51 V7.08a
+OBJECT MODULE PLACED IN SW_CNT.OBJ
+ASSEMBLER INVOKED BY: C:\Keil2\C51\BIN\A51.EXE SW_CNT.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+  00A7                 1     SW EQU P2.7
+  00B0                 2     LED EQU P3
+----                   3     CSEG AT 0 
+0000 7B00              4     MOV R3,#0X00
+0002                   5     LOOP:
+0002 8BB0              6     MOV LED,R3
+0004 20A7FD            7     JB SW,$                                                                                    
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                
+0007 30A7FD            8     JNB SW,$
+000A 0B                9     INC R3
+000B 80F5             10     SJMP LOOP
+                      11     END
+A51 MACRO ASSEMBLER  SW_CNT                                                               08/29/2025 10:56:46 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LED. . . . . . . .  D ADDR   00B0H   A   
+LOOP . . . . . . .  C ADDR   0002H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+SW . . . . . . . .  B ADDR   00A0H.7 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

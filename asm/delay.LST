@@ -1,0 +1,83 @@
+A51 MACRO ASSEMBLER  DELAY                                                                08/28/2025 09:43:59 PAGE     1
+
+
+MACRO ASSEMBLER A51 V7.08a
+OBJECT MODULE PLACED IN .\delay.obj
+ASSEMBLER INVOKED BY: C:\Keil2\C51\BIN\A51.EXE ..\assemble\delay.asm SET(SMALL) DEBUG PRINT(.\delay.lst) OBJECT(.\delay.
+                      obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+  0090                 1     PORTPIN EQU P1.0
+----                   2     CSEG AT 0
+                       3     ;ACALL DELAY_1mS
+0000                   4     LOOP:
+0000 B290              5     CPL PORTPIN
+0002 1134              6     ACALL DELAY_1S
+0004 80FA              7     SJMP LOOP
+0006                   8     DELAY_1MS:
+0006 78FF              9     MOV R0,#255
+0008 D8FE             10     DJNZ R0,$
+000A 78F4             11     MOV R0,#244
+000C D8FE             12     DJNZ R0,$
+000E 22               13     RET
+000F                  14     DELAY_10MS:
+000F 7909             15     MOV R1,#9
+0011 1106             16     L1:ACALL DELAY_1MS
+0013 D9FC             17     DJNZ R1,L1
+0015 79FF             18     MOV R1,#255
+0017 D9FE             19     DJNZ R1,$
+0019 79D6             20     MOV R1,#214
+001B D9FE             21     DJNZ R1,$
+001D 00               22     NOP
+001E 22               23     RET
+001F                  24     DELAY_100MS:
+001F 7A09             25     MOV R2,#9
+0021 110F             26     L2:ACALL DELAY_10MS
+0023 DAFC             27     DJNZ R2,L2
+0025 7A09             28     MOV R2,#9
+0027 1106             29     L3:ACALL DELAY_1MS
+0029 DAFC             30     DJNZ R2,L3
+002B 7AFF             31     MOV R2,#255
+002D DAFE             32     DJNZ R2,$
+002F 7ACD             33     MOV R2,#205
+0031 DAFE             34     DJNZ R2,$
+0033 22               35     RET
+0034                  36     DELAY_1S:
+0034 7B09             37     MOV R3,#9
+0036 111F             38     L4:ACALL DELAY_100MS
+0038 DBFC             39     DJNZ R3,L4
+003A 7B63             40     MOV R3,#99
+003C 1106             41     L5:ACALL DELAY_1MS
+003E DBFC             42     DJNZ R3,L5
+0040 7BBE             43     MOV R3,#190
+0042 DBFE             44     DJNZ R3,$
+0044 00               45     NOP
+0045 22               46     RET
+                      47     END
+A51 MACRO ASSEMBLER  DELAY                                                                08/28/2025 09:43:59 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DELAY_100MS. . . .  C ADDR   001FH   A   
+DELAY_10MS . . . .  C ADDR   000FH   A   
+DELAY_1MS. . . . .  C ADDR   0006H   A   
+DELAY_1S . . . . .  C ADDR   0034H   A   
+L1 . . . . . . . .  C ADDR   0011H   A   
+L2 . . . . . . . .  C ADDR   0021H   A   
+L3 . . . . . . . .  C ADDR   0027H   A   
+L4 . . . . . . . .  C ADDR   0036H   A   
+L5 . . . . . . . .  C ADDR   003CH   A   
+LOOP . . . . . . .  C ADDR   0000H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+PORTPIN. . . . . .  B ADDR   0090H.0 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

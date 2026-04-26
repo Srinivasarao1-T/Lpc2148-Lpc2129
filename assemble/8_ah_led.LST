@@ -1,0 +1,86 @@
+A51 MACRO ASSEMBLER  8_AH_LED                                                             08/29/2025 10:35:03 PAGE     1
+
+
+MACRO ASSEMBLER A51 V7.08a
+OBJECT MODULE PLACED IN 8_ah_led.OBJ
+ASSEMBLER INVOKED BY: C:\Keil2\C51\BIN\A51.EXE 8_ah_led.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+  0090                 1     PORTPIN EQU P1.0
+----                   2     CSEG AT 0
+                       3     ;ACALL DELAY_1mS
+0000 AF00              4     MOV R7,0X00
+0002                   5     LOOP :
+0002 8FA0              6     MOV P2,R7
+0004 0F                7     INC R7
+0005 113A              8     ACALL DELAY_1S
+0007 BF00F8            9     CJNE R7,#0x00,LOOP
+000A 80FE             10     SJMP $
+000C                  11     DELAY_1MS:
+000C 78FF             12     MOV R0,#255
+000E D8FE             13     DJNZ R0,$
+0010 78F4             14     MOV R0,#244
+0012 D8FE             15     DJNZ R0,$
+0014 22               16     RET
+0015                  17     DELAY_10MS:
+0015 7909             18     MOV R1,#9
+0017 110C             19     L1:ACALL DELAY_1MS
+0019 D9FC             20     DJNZ R1,L1
+001B 79FF             21     MOV R1,#255
+001D D9FE             22     DJNZ R1,$
+001F 79D6             23     MOV R1,#214
+0021 D9FE             24     DJNZ R1,$
+0023 00               25     NOP
+0024 22               26     RET
+0025                  27     DELAY_100MS:
+0025 7A09             28     MOV R2,#9
+0027 1115             29     L2:ACALL DELAY_10MS
+0029 DAFC             30     DJNZ R2,L2
+002B 7A09             31     MOV R2,#9
+002D 110C             32     L3:ACALL DELAY_1MS
+002F DAFC             33     DJNZ R2,L3
+0031 7AFF             34     MOV R2,#255
+0033 DAFE             35     DJNZ R2,$
+0035 7ACD             36     MOV R2,#205
+0037 DAFE             37     DJNZ R2,$
+0039 22               38     RET
+003A                  39     DELAY_1S:
+003A 7B09             40     MOV R3,#9
+003C 1125             41     L4:ACALL DELAY_100MS
+003E DBFC             42     DJNZ R3,L4
+0040 7B63             43     MOV R3,#99
+0042 110C             44     L5:ACALL DELAY_1MS
+0044 DBFC             45     DJNZ R3,L5
+0046 7BBE             46     MOV R3,#190
+0048 DBFE             47     DJNZ R3,$
+004A 00               48     NOP
+004B 22               49     RET
+                      50     END
+A51 MACRO ASSEMBLER  8_AH_LED                                                             08/29/2025 10:35:03 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DELAY_100MS. . . .  C ADDR   0025H   A   
+DELAY_10MS . . . .  C ADDR   0015H   A   
+DELAY_1MS. . . . .  C ADDR   000CH   A   
+DELAY_1S . . . . .  C ADDR   003AH   A   
+L1 . . . . . . . .  C ADDR   0017H   A   
+L2 . . . . . . . .  C ADDR   0027H   A   
+L3 . . . . . . . .  C ADDR   002DH   A   
+L4 . . . . . . . .  C ADDR   003CH   A   
+L5 . . . . . . . .  C ADDR   0042H   A   
+LOOP . . . . . . .  C ADDR   0002H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+PORTPIN. . . . . .  B ADDR   0090H.0 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

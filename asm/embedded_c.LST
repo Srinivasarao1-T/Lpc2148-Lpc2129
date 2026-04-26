@@ -1,0 +1,42 @@
+C51 COMPILER V7.08   EMBEDDED_C                                                            08/28/2025 09:56:26 PAGE 1   
+
+
+C51 COMPILER V7.08, COMPILATION OF MODULE EMBEDDED_C
+OBJECT MODULE PLACED IN embedded_c.OBJ
+COMPILER INVOKED BY: C:\Keil2\C51\BIN\C51.EXE embedded_c.c OMF2 BROWSE DEBUG
+
+line level    source
+
+   1          //#include <reg51.h>
+   2          sfr P0=0x80;
+   3           int i;
+   4           sbit portpin=P0^0;
+   5          main()
+   6          {
+   7   1        
+   8   1         while(1)
+   9   1         {
+  10   2          portpin=0;
+  11   2              for (i=0;i<120;i++) ;
+  12   2          portpin=1;
+  13   2              for (i=0;i<120;i++) ;
+  14   2         }
+  15   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     51    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

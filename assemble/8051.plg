@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\v24he8t3\Desktop\arm\8051\assemble\8051.uvproj
+Project File Date:  08/25/2025
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling STARTUP.A51...
+assembling delay.asm...
+delay.asm(5): warning A52: VALUE HAS BEEN TRUNCATED
+delay.asm(7): warning A52: VALUE HAS BEEN TRUNCATED
+linking...
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    C:000000H   
+    TO:      C:000003H   
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 1000017H
+Program Size: data=9.0 xdata=0 const=0 code=28
+Target not created

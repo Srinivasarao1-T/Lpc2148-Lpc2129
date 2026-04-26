@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\v24he8t3\Desktop\arm\8051\assemble\arm_project.uvproj
+Project File Date:  08/25/2025
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling STARTUP.A51...
+assembling delay.asm...
+delay.asm(5): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+delay.asm(7): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0017H
+Program Size: data=9.0 xdata=0 code=28
+"arm_project" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(123): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(128): error A30: SEGMENT SYMBOL EXPECTED
+assembling delay.asm...
+delay.asm(5): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+delay.asm(7): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(123): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(185): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+assembling delay.asm...
+delay.asm(5): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+delay.asm(7): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0017H
+Program Size: data=9.0 xdata=0 code=28
+"arm_project" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(123): error A45: UNDEFINED SYMBOL (PASS-2)
+assembling delay.asm...
+delay.asm(5): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+delay.asm(7): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+assembling delay.asm...
+delay.asm(5): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+delay.asm(7): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0017H
+Program Size: data=9.0 xdata=0 code=28
+"arm_project" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(123): error A45: UNDEFINED SYMBOL (PASS-2)
+assembling delay.asm...
+delay.asm(5): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+delay.asm(7): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(185): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(196): error A45: UNDEFINED SYMBOL (PASS-2)
+assembling delay.asm...
+delay.asm(5): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+delay.asm(7): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+assembling delay.asm...
+delay.asm(5): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+delay.asm(7): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0017H
+Program Size: data=9.0 xdata=0 code=28
+"arm_project" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+assembling delay.asm...
+delay.asm(5): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+delay.asm(7): warning A52: VALUE HAS BEEN TRUNCATED TO 8 BITS
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0017H
+Program Size: data=9.0 xdata=0 code=28
+"arm_project" - 0 Error(s), 5 Warning(s).

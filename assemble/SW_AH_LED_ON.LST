@@ -1,0 +1,35 @@
+A51 MACRO ASSEMBLER  SW_AH_LED_ON                                                         08/30/2025 12:24:24 PAGE     1
+
+
+MACRO ASSEMBLER A51 V7.08a
+OBJECT MODULE PLACED IN SW_AH_LED_ON.OBJ
+ASSEMBLER INVOKED BY: C:\Keil2\C51\BIN\A51.EXE SW_AH_LED_ON.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+  00A0                 1     SW EQU P2.0
+  00A7                 2     LED EQU P2.7
+----                   3     CSEG AT 0
+0000                   4     LOOP:
+0000 A2A0              5     MOV C ,SW
+0002 92A7              6     MOV LED,C
+0004 80FA              7     SJMP LOOP
+                       8     END
+A51 MACRO ASSEMBLER  SW_AH_LED_ON                                                         08/30/2025 12:24:24 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LED. . . . . . . .  B ADDR   00A0H.7 A   
+LOOP . . . . . . .  C ADDR   0000H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+SW . . . . . . . .  B ADDR   00A0H.0 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

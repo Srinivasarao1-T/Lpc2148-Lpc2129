@@ -1,0 +1,42 @@
+BL51 BANKED LINKER/LOCATER V5.03                                                        08/30/2025  12:24:25  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V5.03, INVOKED BY:
+C:\KEIL2\C51\BIN\BL51.EXE SW_AH_LED_ON.obj TO new
+
+
+INPUT MODULES INCLUDED:
+  SW_AH_LED_ON.obj (SW_AH_LED_ON)
+
+
+LINK MAP OF MODULE:  new (SW_AH_LED_ON)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0006H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  new (SW_AH_LED_ON)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SW_AH_LED_ON
+  B:00A0H.7       SYMBOL        LED
+  C:0000H         SYMBOL        LOOP
+  D:00A0H         SYMBOL        P2
+  B:00A0H.0       SYMBOL        SW
+  C:0000H         LINE#         5
+  C:0002H         LINE#         6
+  C:0004H         LINE#         7
+  -------         ENDMOD        SW_AH_LED_ON
+
+Program Size: data=8.0 xdata=0 code=6
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

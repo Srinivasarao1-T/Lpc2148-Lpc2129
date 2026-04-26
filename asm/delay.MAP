@@ -1,0 +1,134 @@
+LX51 LINKER/LOCATER V3.61                                                               08/28/2025  09:56:28  PAGE 1
+
+
+LX51 LINKER/LOCATER V3.61, INVOKED BY:
+C:\KEIL2\C51\BIN\LX51.EXE embedded_c.obj, STARTUP.obj TO delay CLASSES (CODE (C:0X0-C:0XFFF), ECODE (C:0X0-C:0XFFF), HCO
+>> NST (C:0X0-C:0XFFF))
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  embedded_c.obj (EMBEDDED_C)
+         COMMENT TYPE 0: C51 V7.08
+  STARTUP.obj (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  delay (EMBEDDED_C)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:000FFFH   000042H   CODE
+C:000000H   C:000000H   C:000FFFH             ECODE
+B00:0000H   C:000000H   C:000FFFH             HCONST
+I:000000H   I:000000H   I:00007FH   00000AH   DATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  delay (EMBEDDED_C)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000009H   000002H   BYTE   UNIT     DATA           ?DT?EMBEDDED_C
+00000AH   00000AH   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   000035H   000033H   BYTE   UNIT     CODE           ?PR?MAIN?EMBEDDED_C
+000036H   000041H   00000CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   delay (EMBEDDED_C)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> ?PR?MAIN?EMBEDDED_C
+
+MAIN/EMBEDDED_C             ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  delay (EMBEDDED_C)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000003H   CODE     ---       ?C_START
+LX51 LINKER/LOCATER V3.61                                                             08/28/2025  09:56:28  PAGE 2
+
+
+      01000000H   CODE     ---       ?C_STARTUP
+      00000008H   DATA     INT       i
+      01000003H   CODE     ---       main
+*SFR* 00000080H   DATA     BYTE      P0
+*SFR* 00000080H   DATA     BIT       portpin
+
+
+
+SYMBOL TABLE OF MODULE:  delay (EMBEDDED_C)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       EMBEDDED_C
+      00000008H   PUBLIC    DATA     INT       i
+      01000003H   PUBLIC    CODE     ---       main
+      00000080H   SFRSYM    DATA     BYTE      P0
+      00000080H   SFRSYM    DATA     BIT       portpin
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      01000003H   LINE      CODE     ---       #5
+      01000003H   LINE      CODE     ---       #6
+      01000003H   LINE      CODE     ---       #8
+      01000003H   LINE      CODE     ---       #9
+      01000003H   LINE      CODE     ---       #10
+      01000005H   LINE      CODE     ---       #11
+      01000018H   LINE      CODE     ---       #12
+      0100001AH   LINE      CODE     ---       #13
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+      000000E0H   SYMBOL    DATA     ---       ACC
+      000000F0H   SYMBOL    DATA     ---       B
+      00000083H   SYMBOL    DATA     ---       DPH
+      00000082H   SYMBOL    DATA     ---       DPL
+      00000000H   SYMBOL    NUMBER   ---       IBPSTACK
+      00000100H   SYMBOL    NUMBER   ---       IBPSTACKTOP
+      00000080H   SYMBOL    NUMBER   ---       IDATALEN
+      01000039H   SYMBOL    CODE     ---       IDATALOOP
+      00000000H   SYMBOL    NUMBER   ---       PBPSTACK
+      00000000H   SYMBOL    NUMBER   ---       PBPSTACKTOP
+      00000000H   SYMBOL    NUMBER   ---       PDATALEN
+      00000000H   SYMBOL    NUMBER   ---       PDATASTART
+      00000000H   SYMBOL    NUMBER   ---       PPAGE
+      00000000H   SYMBOL    NUMBER   ---       PPAGEENABLE
+      000000A0H   SYMBOL    DATA     ---       PPAGE_SFR
+      00000081H   SYMBOL    DATA     ---       SP
+      01000036H   SYMBOL    CODE     ---       STARTUP1
+      00000000H   SYMBOL    NUMBER   ---       XBPSTACK
+      00000000H   SYMBOL    NUMBER   ---       XBPSTACKTOP
+      00000000H   SYMBOL    NUMBER   ---       XDATALEN
+      00000000H   SYMBOL    NUMBER   ---       XDATASTART
+      01000000H   LINE      CODE     ---       #92
+      01000036H   LINE      CODE     ---       #99
+      01000038H   LINE      CODE     ---       #100
+      01000039H   LINE      CODE     ---       #101
+      0100003AH   LINE      CODE     ---       #102
+      0100003CH   LINE      CODE     ---       #151
+      0100003FH   LINE      CODE     ---       #155
+
+Program Size: data=11.0 xdata=0 const=0 code=66
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
