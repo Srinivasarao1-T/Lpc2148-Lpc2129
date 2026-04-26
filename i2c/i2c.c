@@ -1,0 +1,80 @@
+#include"types.h"
+#include "i2c.h"
+#include "i2c_defines.h"
+#include <lpc21xx.h>
+void init_i2c()
+{
+	PINSEL0=PINSEL0&~(3<<(2*2))|(SCL_PIN_0_2<<(2*2));//P0.2 TO SCL FUNCTION
+	PINSEL0=PINSEL0&~(3<<(3*2))|(SCL_PIN_0_2<<(3*2));//P0.3 TO SDA FUNCTION
+	//CFG SPEED FOR I2C SERIAL COMMUNICATION
+	I2SCLL=BITRATE;
+	I2SCLH=BITRATE;
+	//I2C PERIPHERIAL ENABLE FOR COMMUNICATION
+	I2CONSET=1<<I2EN_BIT;
+}
+void i2c_start()
+{
+	//initate start event
+	I2CONSET=1<<STA_BIT;
+	//WRITE FOR START EVENT COMPLETION STATUS
+	while(((I2CONSET>>SI_BIT)&1)==0);
+	//CLEAR START EVENT BIT
+	I2CONCLR=1<<SIAC_BIT;
+}
+void i2c_reset()
+{
+	//initate restart event
+	I2CONSET=1<<STA_BIT;
+	//CLR PREV STC_BIT TO TRIGGER RESTART
+	I2CONCLR=1<<SIC_BIT;
+	//WAIT FOR RESTART EVENT COMPTETATION STATUS
+	while(((I2CONSET>>SI_BIT)&1)==0);
+	//CLEAR RESTART EVENT BIT
+	I2CONCLR=1<<SIAC_BIT;
+}
+void i2c_stop()
+{
+	//initate stop event 
+	I2CONSET=1<<SIO_BIT;
+	//CLEAR PREV STC TO TRIGGER STOP
+	I2CONCLR=1<<SIC_BIT;
+}
+void i2c_write(u8 sDat)
+{
+	//write to buff
+	I2DAT=sDat;
+	//CLEAR PREV SIC_BIT TO TRIGGER
+	//SERILIZATION OUT MSB TO LSB ORDER
+	I2CONCLR=1<<SIC_BIT;
+       //WRITE UNTIL SELIZATION COMPLETION
+       while(((I2CONSET>>SI_BIT)&1)==0);
+        //TO ASSUMING POSITIVE ACK FROM SLAVE       
+}
+u8 i2c_nack()
+{
+	//clear sic_bit to trigger
+	//serilazation in msb to lsb order 
+	I2CONCLR=1<<SIC_BIT;
+	//WAIT UNTIL SERILIZATION COMPLETATION
+     while(((I2CONSET>>SI_BIT)&1)==0);
+     //ISSUE NACK TO SLAVE
+     //READ &RETURN RECEIVED BYTE
+     return I2DAT;
+}
+u8 i2c_mack()
+{
+	//set to issue mack to slave
+	I2CONSET=1<<AA_BIT;
+	//CLEAR SIC BIT TO TRIGGER
+
+	//SERILIZATION IN MSB TO LSB ORDER
+	I2CONCLR=1<<SIC_BIT;
+       //WAIT UNTIL SERILIZATION COMPLETION
+       while(((I2CONSET>>SI_BIT)&1)==0);
+       //&ISSUE MACK TO SLAVE
+       //&CLEAR AA_BIT
+       I2CONCLR=1<<AAC_BIT;
+       //READ &RETURN RECIVED BYTE
+       return I2DAT;
+}
+

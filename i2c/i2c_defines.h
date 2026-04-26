@@ -1,0 +1,27 @@
+//DEFINE PIN
+#define FUN2 1
+#define SCL_PIN_0_2 FUN2 
+#define SCL_PIN_0_3 FUN2
+//DEFINE FOR I2CSPEED CONFIGURATION
+#define FOSC 12000000
+#define CCLK (FOSC*5)
+#define PCLK (CCLK/4)
+#define I2C_SPEED 100000 
+#define BITRATE ((PCLK/I2C_SPEED)/2)
+//BIT DEFINE FOR I2CONSET SFR
+#define AA_BIT 2
+#define SI_BIT 3
+#define SIO_BIT 4
+#define STA_BIT 5
+#define I2EN_BIT 6
+
+//BIT DEFINE FOR I2CONSET SFR
+#define I2ENC_BIT 6
+#define AAC_BIT 2
+#define SIC_BIT 3
+#define SIAC_BIT 5
+#define SIOC_BIT 4
+
+
+
+#define I2C_EEPROM_SA 0X50 //7BIT SLAVE ADDRESS 
